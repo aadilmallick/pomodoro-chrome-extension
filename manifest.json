@@ -1,0 +1,34 @@
+{
+  "name": "Pomodoro timer",
+  "description": "Best pomodoro timer ever, best study tool",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "alarms", "notifications"],
+  "action": {
+    "default_popup": "popup/Popup.html",
+    "default_icon": {
+      "16": "/images/icon.png",
+      "32": "/images/icon.png",
+      "48": "/images/icon.png",
+      "128": "/images/icon.png"
+    },
+    "default_title": "Click on Omniman"
+  },
+  "icons": {
+    "16": "/images/icon.png",
+    "32": "/images/icon.png",
+    "48": "/images/icon.png",
+    "128": "/images/icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["/images/*"],
+      "matches": ["https://*/*"]
+    }
+  ],
+  "options_page": "options/Options.html"
+}
