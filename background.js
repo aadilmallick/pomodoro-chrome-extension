@@ -1,5 +1,6 @@
 import { setLocal, getLocal } from "./helper.js";
 
+// TODO add periodInMinutes : 1 functionality for release to app store
 chrome.alarms.create("pomodoroTimer", {
   periodInMinutes: 1 / 60,
 });
